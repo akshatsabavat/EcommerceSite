@@ -16,9 +16,9 @@ a {
 }
 
 .main-container {
-  max-width: 1400px;
+  max-width: 1350px;
   margin: auto;
-  width: 100%;
+  width: 80%;
 }
 .layout {
   padding: 10px;
@@ -132,8 +132,8 @@ span.text-red {
   background-color: #dcdcdc;
   border-radius: 15px;
   position: relative;
-  height: 500px;
-  line-height: 0.9;
+  height: 300px;
+  line-height: 1;
   width: 100%;
 }
 .hero-banner-container .beats-solo {
@@ -145,21 +145,21 @@ span.text-red {
   background-color: #f02d34;
   color: white;
   border: none;
-  margin-top: 40px;
-  font-size: 18px;
+  margin-top: 25px;
+  font-size: 17px;
   font-weight: 500;
   cursor: pointer;
   z-index: 10000 !important;
 }
 
 .hero-banner-container h3 {
-  font-size: 4rem;
+  font-size: 3.5rem;
   margin-top: 4px;
 }
 .hero-banner-container h1 {
   color: white;
-  font-size: 10em;
-  margin-left: -20px;
+  font-size: 9.5em;
+  margin-left: -5px;
   text-transform: uppercase;
 }
 .hero-banner-image {
@@ -180,8 +180,8 @@ span.text-red {
   color: #324d67;
 }
 .desc p {
-  color: #5f5f5f;
-  font-weight: 100;
+  color: #585858ac;
+  font-weight: 400;
   text-align: end;
 }
 .desc h5 {
@@ -209,7 +209,7 @@ span.text-red {
   background-color: #f02d34;
   border-radius: 15px;
   position: relative;
-  height: 400px;
+  height: 260px;
   line-height: 1;
   color: white;
   width: 100%;
@@ -243,10 +243,11 @@ span.text-red {
   /* top: -35%;
   left: 8%; */
   top: -25%;
-  left: 25%;
+  left: 20%;
 }
 .banner-desc .right {
   line-height: 1.4;
+  margin-left: 450px;
 }
 .banner-desc .right h3 {
   font-weight: 800;
@@ -254,6 +255,7 @@ span.text-red {
 }
 .banner-desc .right p {
   font-size: 18px;
+  width: 80%;
 }
 .banner-desc .right .company-desc {
   font-size: 14px;
