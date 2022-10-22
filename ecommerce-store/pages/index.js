@@ -2,7 +2,7 @@ import React from "react";
 // import Footer from "../components/Footer/Footer";
 // import HeroBanner from "../components/HeroBanner/HeroBanner";
 // import Product from "../components/Product/Product";
-import { Footer, Product, HeroBanner } from "../components";
+import { FooterBanner, Product, HeroBanner } from "../components";
 import { client } from "../lib/client";
 const Home = ({ bannerData, products }) => {
   return (
@@ -20,7 +20,7 @@ const Home = ({ bannerData, products }) => {
         ))}
       </div>
 
-      <Footer bannerDesc={bannerData.length && bannerData[1]} />
+      <FooterBanner bannerDesc={bannerData.length && bannerData[1]} />
     </div>
   );
 };
