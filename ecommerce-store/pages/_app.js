@@ -6,7 +6,10 @@ import "../styles/globals.css";
 function MyApp({ Component, pageProps }) {
   return (
     <Layout>
-      <Component {...pageProps} />;
+      <StateContext>
+        <Toaster />
+        <Component {...pageProps} />;
+      </StateContext>
     </Layout>
   );
 }
