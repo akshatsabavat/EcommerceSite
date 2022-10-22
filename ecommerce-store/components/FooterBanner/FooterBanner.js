@@ -2,7 +2,7 @@ import Link from "next/link";
 import React from "react";
 import { urlFor } from "../../lib/client";
 
-const Footer = ({ bannerDesc }) => {
+const FooterBanner = ({ bannerDesc }) => {
   return (
     <div className="footer-banner-container">
       <div className="banner-desc">
@@ -31,4 +31,4 @@ const Footer = ({ bannerDesc }) => {
   );
 };
 
-export default Footer;
+export default FooterBanner;
