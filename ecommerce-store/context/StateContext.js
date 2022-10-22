@@ -11,30 +11,31 @@ export const StateContext = ({ children }) => {
   const [qty, setQty] = useState(1);
 
   const incQty = () => {
-    setQty((prevQty) => {
-      prevQty + 1;
-    });
+    let x = qty + 1;
+    setQty(x);
   };
 
   const decQty = () => {
-    setQty((prevQty) => {
-      if (prevQty < 1) return 1;
-
-      return prevQty - 1;
-    });
+    let y;
+    qty - 1 < 1 ? (y = 1) : (y = qty - 1);
+    setQty(y);
   };
 
   return (
     <Context.Provider
-      value={
-        (showCart, cartItems, totalPrice, totalQuantities, qty, incQty, decQty)
-      }
+      value={{
+        showCart,
+        cartItems,
+        totalPrice,
+        totalQuantities,
+        qty,
+        incQty,
+        decQty,
+      }}
     >
       {children}
     </Context.Provider>
   );
 };
 
-export const useStateContext = () => {
-  useContext(Context);
-};
+export const useStateContext = () => useContext(Context);
