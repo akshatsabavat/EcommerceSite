@@ -5,12 +5,12 @@ import "../styles/globals.css";
 
 function MyApp({ Component, pageProps }) {
   return (
-    <Layout>
-      <StateContext>
+    <StateContext>
+      <Layout>
         <Toaster />
         <Component {...pageProps} />;
-      </StateContext>
-    </Layout>
+      </Layout>
+    </StateContext>
   );
 }
 
