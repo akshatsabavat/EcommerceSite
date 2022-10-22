@@ -233,7 +233,7 @@ span.text-red {
 .banner-desc .left h3 {
   font-weight: 900;
   font-size: 80px;
-  margin-left: 25px;
+  margin-left: 15px;
 }
 .banner-desc .left p {
   margin: 18px;
@@ -247,7 +247,7 @@ span.text-red {
 }
 .banner-desc .right {
   line-height: 1.4;
-  margin-left: 450px;
+  margin-left: 500px;
 }
 .banner-desc .right h3 {
   font-weight: 800;
@@ -291,6 +291,11 @@ span.text-red {
   align-items: center;
   gap: 10px;
   justify-content: center;
+}
+
+.footer-container p {
+  font-weight: 600;
+  word-spacing: 3px;
 }
 .footer-container .icons {
   font-size: 30px;
