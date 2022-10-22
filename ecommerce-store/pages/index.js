@@ -20,7 +20,7 @@ const Home = ({ bannerData, products }) => {
         ))}
       </div>
 
-      <Footer />
+      <Footer bannerDesc={bannerData.length && bannerData[1]} />
     </div>
   );
 };
