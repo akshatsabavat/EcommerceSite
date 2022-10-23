@@ -21,6 +21,41 @@ export const StateContext = ({ children }) => {
     setQty(y);
   };
 
+  const openCart = () => {
+    let state = true;
+    setshowCart(state);
+  };
+
+  const closeCart = () => {
+    let state = false;
+    setshowCart(state);
+  };
+
+  const onAdd = (product, quantity) => {
+    const cartCheck = cartItems.find((item) => item._id === product._id);
+    let price = product.price * quantity + totalPrice;
+    let quant = totalQuantities + quantity;
+
+    setTotalPrice(price);
+    setTotalQuantities(quant);
+    if (cartCheck) {
+      const updatedCartItem = cartItems.map((item) => {
+        if (item._id === product._id)
+          return {
+            ...item,
+            quantity: item.quantity + 1,
+          };
+      });
+      setCartItems(updatedCartItem);
+    } else {
+      product.quantity = quantity;
+      setCartItems([...cartItems, { ...product }]);
+    }
+
+    console.log(cartItems);
+    toast.success(`${qty} ${product.name} added to cart`);
+  };
+
   return (
     <Context.Provider
       value={{
@@ -31,6 +66,9 @@ export const StateContext = ({ children }) => {
         qty,
         incQty,
         decQty,
+        onAdd,
+        openCart,
+        closeCart,
       }}
     >
       {children}
